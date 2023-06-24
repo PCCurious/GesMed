@@ -9,12 +9,12 @@ export default function Welcome(){
         <View style={styles.container}>
             <View style={styles.imageContainer}>
                 <Image
-                 source={require("../../../assets/monitoramento.png")}
+                 source={require("../../../assets/telemedicine.png")}
                  style={{width:"50%"}}
                  resizeMode="contain" />
             </View>
             <View style={styles.containerForm}>
-                <Text style={styles.title}>Welcome Dear Friend</Text>
+                <Text style={styles.title}>Welcome to GesMed, Your Doctor Appointment App</Text>
                 <Text style={styles.text}>Please login to start</Text>
                 <TouchableOpacity style={styles.loginButton} onPress={()=>navigation.navigate("SignIn")}>
                     <Text style={styles.buttonText}>Login</Text>
@@ -27,11 +27,11 @@ export default function Welcome(){
 const styles = StyleSheet.create({
     container:{
         flex: 1,
-        backgroundColor: "#43f3c1",
+        backgroundColor: "#006992",
     },
     imageContainer:{
         flex: 2,
-        backgroundColor: "#43f3c1",
+        backgroundColor: "#006992",
         justifyContent: "center",
         alignItems: "center",
     },
@@ -57,7 +57,7 @@ const styles = StyleSheet.create({
         color: "#a1a1a1",
     },
     loginButton:{
-        backgroundColor: "#43f3c1",
+        backgroundColor: "#006992",
         borderRadius:50,
         paddingVertical: 12,
         width: "60%",

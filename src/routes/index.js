@@ -21,7 +21,7 @@ function TabNavigator(){
             component={Home}
             options={{
                 tabBarLabel:"Home",
-                tabBarIcon:()=> <MaterialIcons name="home" color={"#43f3c1"} size={20}/>,
+                tabBarIcon:()=> <MaterialIcons name="home" color={"#006992"} size={20}/>,
             }}
             />
             <Tab.Screen
@@ -29,7 +29,7 @@ function TabNavigator(){
             component={Details}
             options={{
                 tabBarLabel:"Details",
-                tabBarIcon:()=> <MaterialIcons name="list" color={"#43f3c1"} size={20}/>,
+                tabBarIcon:()=> <MaterialIcons name="list" color={"#006992"} size={20}/>,
             }}
             />
             <Tab.Screen
@@ -37,7 +37,7 @@ function TabNavigator(){
             component={Settings}
             options={{
                 tabBarLabel:"Settings",
-                tabBarIcon:()=> <MaterialIcons name="build" color={"#43f3c1"} size={20}/>,
+                tabBarIcon:()=> <MaterialIcons name="build" color={"#006992"} size={20}/>,
             }}
             />
             <Tab.Screen
@@ -45,7 +45,7 @@ function TabNavigator(){
             component={List}
             options={{
                 tabBarLabel:"List",
-                tabBarIcon:()=> <MaterialIcons name="list-alt" color={"#43f3c1"} size={20}/>,
+                tabBarIcon:()=> <MaterialIcons name="list-alt" color={"#006992"} size={20}/>,
             }}
             />
         </Tab.Navigator>

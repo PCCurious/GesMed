@@ -77,7 +77,7 @@ export default function SignIn(){
                 <TouchableOpacity 
                 style={styles.buttonRegister} 
                 onPress={handleDefaultAuthentication}>
-                    <MaterialIcons name="fingerprint" size={50} color="#43f3c1"/>
+                    <MaterialIcons name="fingerprint" size={50} color="#006992"/>
                 </TouchableOpacity>
             </View>
         </View>
@@ -86,11 +86,11 @@ export default function SignIn(){
 const styles = StyleSheet.create({
     container:{
         flex: 1,
-        backgroundColor: "#43f3c1",
+        backgroundColor: "#006992",
     },
     imageContainer:{
         flex: 2,
-        backgroundColor: "#43f3c1",
+        backgroundColor: "#006992",
         justifyContent: "center",
         alignItems: "center",
     },
@@ -128,7 +128,7 @@ const styles = StyleSheet.create({
         marginTop: 28,
     },
     button:{
-        backgroundColor: "#43f3c1",
+        backgroundColor: "#006992",
         width:"100%",
         borderRadius:4,
         paddingVertical:8,

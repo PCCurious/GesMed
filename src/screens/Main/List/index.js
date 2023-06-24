@@ -79,11 +79,11 @@ const styles = StyleSheet.create({
     goalItem: {
         margin: 2,
         padding: 2,
-        backgroundColor: "#43f3c1",
+        backgroundColor: "#006992",
     },
     // imageContainer:{
     //     flex: 2,
-    //     backgroundColor: "#43f3c1",
+    //     backgroundColor: "#006992",
     //     justifyContent: "center",
     //     alignItems: "center",
     // },
@@ -109,7 +109,7 @@ const styles = StyleSheet.create({
     //     color: "#a1a1a1",
     // },
     // loginButton:{
-    //     backgroundColor: "#43f3c1",
+    //     backgroundColor: "#006992",
     //     borderRadius:50,
     //     paddingVertical: 12,
     //     width: "60%",
