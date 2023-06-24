@@ -2,17 +2,17 @@ import React from "react";
 import { StyleSheet } from "react-native";
 import { View, Text, Image } from "react-native";
 
-export default function Settings(){
+export default function Doctors(){
     return(
         <View style={styles.container}>
             <View style={styles.imageContainer}>
-                <Image source={require("../../../../assets/settings.png")}
+                <Image source={require("../../../../assets/stethoscope.png")}
                 style={{width: "50%"}}
                 resizeMode="contain"
                 />
             </View>
             <View style={styles.containerForm}>
-                <Text style={styles.title}>Welcome to the Settings Screen</Text>
+                <Text style={styles.title}>Welcome to the Doctors Screen</Text>
                 <Text style={styles.text}>I hope you enjoy the app :D</Text>
                 <Text style={styles.text}>Feel free to navigate in it</Text>
             </View>

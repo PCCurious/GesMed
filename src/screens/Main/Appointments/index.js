@@ -4,40 +4,40 @@ import { View, Text, Image } from "react-native";
 import { Accelerometer } from "expo-sensors";
 
 export default function Appointments(){
-    const [data, setData] = useState({
-        x:0,
-        y:0,
-        z:0,
-    })
+    // const [data, setData] = useState({
+    //     x:0,
+    //     y:0,
+    //     z:0,
+    // })
 
-    const [steps, setSteps] = useState(0);
+    // const [steps, setSteps] = useState(0);
 
-    useEffect(()=>{
-        let lastY = 0;
-        let isMoving = false;
+    // useEffect(()=>{
+    //     let lastY = 0;
+    //     let isMoving = false;
 
-        Accelerometer.addListener((accelerometerData)=>{
-            const {y} = accelerometerData;
+    //     Accelerometer.addListener((accelerometerData)=>{
+    //         const {y} = accelerometerData;
 
-            //count steps based on changes in y-axis
-            if(lastY && y > lastY + 0.1 && !isMoving){
-                setSteps((prevSteps)=>prevSteps + 1);
-                isMoving = true;
-            }else if(lastY && y < lastY - 0.1 && isMoving){
-                isMoving = false;
-            }
-            lastY = y;
-            setData(accelerometerData);
-        });
-        return () => {
-            Accelerometer.removeAllListeners();
-        };
-    },[])
+    //         //count steps based on changes in y-axis
+    //         if(lastY && y > lastY + 0.1 && !isMoving){
+    //             setSteps((prevSteps)=>prevSteps + 1);
+    //             isMoving = true;
+    //         }else if(lastY && y < lastY - 0.1 && isMoving){
+    //             isMoving = false;
+    //         }
+    //         lastY = y;
+    //         setData(accelerometerData);
+    //     });
+    //     return () => {
+    //         Accelerometer.removeAllListeners();
+    //     };
+    // },[])
 
     return(
         <View style={styles.container}>
             <View style={styles.imageContainer}>
-                <Image source={require("../../../../assets/magnifier.png")}
+                <Image source={require("../../../../assets/appointment.png")}
                 style={{width: "50%"}}
                 resizeMode="contain"
                 />

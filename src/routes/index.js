@@ -3,7 +3,7 @@ import SignIn from "../screens/SignIn";
 import Welcome from "../screens/Welcome";
 import Home from "../screens/Main/Home";
 import Appointments from "../screens/Main/Appointments";
-import Settings from "../screens/Main/Settings";
+import Doctors from "../screens/Main/Doctors";
 import List from "../screens/Main/List";
 
 import MaterialIcons from "react-native-vector-icons/MaterialIcons";
@@ -34,10 +34,10 @@ function TabNavigator(){
             }}
             />
             <Tab.Screen
-            name="Settings"
-            component={Settings}
+            name="Doctors"
+            component={Doctors}
             options={{
-                tabBarLabel:"doctor",
+                tabBarLabel:"doctors",
                 tabBarIcon:()=> <MaterialCommunityIcons name="doctor" color={"#89CFF0"} size={20}/>,
             }}
             />
