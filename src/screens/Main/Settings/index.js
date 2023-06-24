@@ -23,11 +23,11 @@ export default function Settings(){
 const styles = StyleSheet.create({
     container:{
         flex: 1,
-        backgroundColor: "#006992",
+        backgroundColor: "#89CFF0",
     },
     imageContainer:{
         flex: 2,
-        backgroundColor: "#006992",
+        backgroundColor: "#89CFF0",
         justifyContent: "center",
         alignItems: "center",
     },
@@ -53,7 +53,7 @@ const styles = StyleSheet.create({
         color: "#a1a1a1",
     },
     loginButton:{
-        backgroundColor: "#006992",
+        backgroundColor: "#89CFF0",
         borderRadius:50,
         paddingVertical: 12,
         width: "60%",

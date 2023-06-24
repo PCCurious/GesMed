@@ -6,7 +6,7 @@ import MaterialIcons from "react-native-vector-icons/MaterialIcons";
 import * as LocalAuthentication from "expo-local-authentication";
 
 const login ={
-    email:"yannickx5@gmail.com",
+    email:"test@test.cv",
     password:"Test"
 }
 
@@ -29,7 +29,7 @@ export default function SignIn(){
         if(result.success){
             navigation.navigate("MainScreen");
         }else{
-            Alert.alert("Faild Authentication");
+            Alert.alert("Failed Authentication");
         }
     }
 
@@ -42,12 +42,12 @@ export default function SignIn(){
                  resizeMode="contain" />
             </View>
             <View style={styles.containerHeader}>
-                <Text style={styles.headerText}>Seja Benvindo(a)</Text>
+                <Text style={styles.headerText}>Welcome</Text>
             </View>
             <View style={styles.containerForm}>
                 <Text style={styles.title}>Email</Text>
                 <TextInput 
-                placeholder="Digite o seu email" 
+                placeholder="email@example.com" 
                 style={styles.input} 
                 onChangeText={(text)=>setEmail(text)}
                 value={email}
@@ -55,7 +55,7 @@ export default function SignIn(){
                 
                 <Text style={styles.title}>Password</Text>
                 <TextInput 
-                placeholder="Digite a sua password" 
+                placeholder="Input password" 
                 style={styles.input} 
                 onChangeText={(text)=>setPassword(text)} 
                 value={password}
@@ -77,7 +77,7 @@ export default function SignIn(){
                 <TouchableOpacity 
                 style={styles.buttonRegister} 
                 onPress={handleDefaultAuthentication}>
-                    <MaterialIcons name="fingerprint" size={50} color="#006992"/>
+                    <MaterialIcons name="fingerprint" size={50} color="#89CFF0"/>
                 </TouchableOpacity>
             </View>
         </View>
@@ -86,11 +86,11 @@ export default function SignIn(){
 const styles = StyleSheet.create({
     container:{
         flex: 1,
-        backgroundColor: "#006992",
+        backgroundColor: "#89CFF0",
     },
     imageContainer:{
         flex: 2,
-        backgroundColor: "#006992",
+        backgroundColor: "#89CFF0",
         justifyContent: "center",
         alignItems: "center",
     },
@@ -128,7 +128,7 @@ const styles = StyleSheet.create({
         marginTop: 28,
     },
     button:{
-        backgroundColor: "#006992",
+        backgroundColor: "#89CFF0",
         width:"100%",
         borderRadius:4,
         paddingVertical:8,

@@ -2,11 +2,12 @@ import React from "react";
 import SignIn from "../screens/SignIn";
 import Welcome from "../screens/Welcome";
 import Home from "../screens/Main/Home";
-import Details from "../screens/Main/Details";
+import Appointments from "../screens/Main/Appointments";
 import Settings from "../screens/Main/Settings";
 import List from "../screens/Main/List";
 
 import MaterialIcons from "react-native-vector-icons/MaterialIcons";
+import { MaterialCommunityIcons } from "@expo/vector-icons";
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
 
@@ -21,31 +22,31 @@ function TabNavigator(){
             component={Home}
             options={{
                 tabBarLabel:"Home",
-                tabBarIcon:()=> <MaterialIcons name="home" color={"#006992"} size={20}/>,
+                tabBarIcon:()=> <MaterialIcons name="home" color={"#89CFF0"} size={20}/>,
             }}
             />
             <Tab.Screen
-            name="Details"
-            component={Details}
+            name="Appointments"
+            component={Appointments}
             options={{
-                tabBarLabel:"Details",
-                tabBarIcon:()=> <MaterialIcons name="list" color={"#006992"} size={20}/>,
+                tabBarLabel:"Appointments",
+                tabBarIcon:()=> <MaterialIcons name="list" color={"#89CFF0"} size={20}/>,
             }}
             />
             <Tab.Screen
             name="Settings"
             component={Settings}
             options={{
-                tabBarLabel:"Settings",
-                tabBarIcon:()=> <MaterialIcons name="build" color={"#006992"} size={20}/>,
+                tabBarLabel:"doctor",
+                tabBarIcon:()=> <MaterialCommunityIcons name="doctor" color={"#89CFF0"} size={20}/>,
             }}
             />
             <Tab.Screen
             name="List"
             component={List}
             options={{
-                tabBarLabel:"List",
-                tabBarIcon:()=> <MaterialIcons name="list-alt" color={"#006992"} size={20}/>,
+                tabBarLabel:"Invoices",
+                tabBarIcon:()=> <MaterialIcons name="list-alt" color={"#89CFF0"} size={20}/>,
             }}
             />
         </Tab.Navigator>

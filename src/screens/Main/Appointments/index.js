@@ -3,7 +3,7 @@ import { StyleSheet } from "react-native";
 import { View, Text, Image } from "react-native";
 import { Accelerometer } from "expo-sensors";
 
-export default function Details(){
+export default function Appointments(){
     const [data, setData] = useState({
         x:0,
         y:0,
@@ -43,16 +43,17 @@ export default function Details(){
                 />
             </View>
             <View style={styles.containerForm}>
-                <Text style={styles.title}>Welcome to the Details Screen</Text>
+                <Text style={styles.title}>Welcome to the Appointments Screen</Text>
+                {/* <Text style={styles.text}>Feel free to navigate in it</Text> */}
+                <Text style={styles.text}>See your Appointments</Text>
                 <Text style={styles.text}>I hope you enjoy the app :D</Text>
-                <Text style={styles.text}>Feel free to navigate in it</Text>
-                <Text>Step Details</Text>
+                {/* <Text>Step Details</Text>
                 <Text>Accelerometer Data: {"\n"}
                 x: {data.x.toFixed(2)} {"\n"}
                 y: {data.y.toFixed(2)} {"\n"}
                 z: {data.z.toFixed(2)} {"\n"}
                 </Text>
-                <Text>Steps: {steps}</Text>
+                <Text>Steps: {steps}</Text> */}
             </View>
         </View>
     );
@@ -62,11 +63,11 @@ export default function Details(){
 const styles = StyleSheet.create({
     container:{
         flex: 1,
-        backgroundColor: "#006992",
+        backgroundColor: "#89CFF0",
     },
     imageContainer:{
         flex: 2,
-        backgroundColor: "#006992",
+        backgroundColor: "#89CFF0",
         justifyContent: "center",
         alignItems: "center",
     },
@@ -92,7 +93,7 @@ const styles = StyleSheet.create({
         color: "#a1a1a1",
     },
     loginButton:{
-        backgroundColor: "#006992",
+        backgroundColor: "#89CFF0",
         borderRadius:50,
         paddingVertical: 12,
         width: "60%",
