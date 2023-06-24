@@ -12,9 +12,12 @@ export default function Home(){
                 />
             </View>
             <View style={styles.containerForm}>
-                <Text style={styles.title}>Welcome to the Home Screen</Text>
-                <Text style={styles.text}>I hope you enjoy the app :D</Text>
-                <Text style={styles.text}>Feel free to navigate in it</Text>
+                <Text style={styles.title}>Welcome to the GesMed Home Screen</Text>
+                <Text style={styles.text}>With this app you can manage your appointments
+                 (create, edit, delete), see the doctors, specialities and even get invoices/recipts
+                  from the appointments that were done. Please use each of the correspondent icons to access it</Text>
+                <Text style={styles.text}>Feel free to navigate and explore the app {"\n"}
+                GesMed, always close to you</Text>
             </View>
         </View>
     );
@@ -51,6 +54,7 @@ const styles = StyleSheet.create({
     },
     text:{
         color: "#a1a1a1",
+        textAlign: "center",
     },
     loginButton:{
         backgroundColor: "#89CFF0",

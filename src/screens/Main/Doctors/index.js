@@ -13,8 +13,8 @@ export default function Doctors(){
             </View>
             <View style={styles.containerForm}>
                 <Text style={styles.title}>Welcome to the Doctors Screen</Text>
+                <Text style={styles.text}>This will have the list of doctors</Text>
                 <Text style={styles.text}>I hope you enjoy the app :D</Text>
-                <Text style={styles.text}>Feel free to navigate in it</Text>
             </View>
         </View>
     );
@@ -32,7 +32,7 @@ const styles = StyleSheet.create({
         alignItems: "center",
     },
     containerForm:{
-        flex: 1,
+        flex: 6,
         backgroundColor: "#fff",
         alignItems: "center",
         borderTopLeftRadius: 25,

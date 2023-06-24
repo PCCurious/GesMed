@@ -44,16 +44,9 @@ export default function Appointments(){
             </View>
             <View style={styles.containerForm}>
                 <Text style={styles.title}>Welcome to the Appointments Screen</Text>
-                {/* <Text style={styles.text}>Feel free to navigate in it</Text> */}
                 <Text style={styles.text}>See your Appointments</Text>
+                <Text style={styles.text}>This will be the list of appointments</Text>
                 <Text style={styles.text}>I hope you enjoy the app :D</Text>
-                {/* <Text>Step Details</Text>
-                <Text>Accelerometer Data: {"\n"}
-                x: {data.x.toFixed(2)} {"\n"}
-                y: {data.y.toFixed(2)} {"\n"}
-                z: {data.z.toFixed(2)} {"\n"}
-                </Text>
-                <Text>Steps: {steps}</Text> */}
             </View>
         </View>
     );
@@ -72,7 +65,7 @@ const styles = StyleSheet.create({
         alignItems: "center",
     },
     containerForm:{
-        flex: 1,
+        flex: 6,
         backgroundColor: "#fff",
         alignItems: "center",
         borderTopLeftRadius: 25,

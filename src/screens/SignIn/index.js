@@ -64,7 +64,6 @@ export default function SignIn(){
 
                 <TouchableOpacity 
                 style={styles.button} 
-                // onPress={()=>navigation.navigate("MainScreen")}
                 onPress={handleLogin}
                 >
                     <Text style={styles.buttonText}>Aceder</Text>
