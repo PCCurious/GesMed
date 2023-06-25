@@ -4,7 +4,8 @@ import Welcome from "../screens/Welcome";
 import Home from "../screens/Main/Home";
 import Appointments from "../screens/Main/Appointments";
 import Doctors from "../screens/Main/Doctors";
-import List from "../screens/Main/List";
+import Invoices from "../screens/Main/Invoices";
+import Logout from "../screens/Main/Logout";
 
 import MaterialIcons from "react-native-vector-icons/MaterialIcons";
 import { MaterialCommunityIcons } from "@expo/vector-icons";
@@ -42,11 +43,19 @@ function TabNavigator(){
             }}
             />
             <Tab.Screen
-            name="List"
-            component={List}
+            name="Invoices"
+            component={Invoices}
             options={{
                 tabBarLabel:"Invoices",
                 tabBarIcon:()=> <MaterialIcons name="list-alt" color={"#89CFF0"} size={20}/>,
+            }}
+            />
+            <Tab.Screen
+            name="Logout"
+            component={Logout}
+            options={{
+                tabBarLabel:"Logout",
+                tabBarIcon:()=> <MaterialIcons name="logout" color={"#89CFF0"} size={20}/>,
             }}
             />
         </Tab.Navigator>

@@ -5,7 +5,7 @@ import { useState } from "react";
 import { ScrollView } from "react-native";
 import { FlatList } from "react-native";
 
-export default function List(){
+export default function Invoices(){
     const [courseGoals, setCourseGoals] = useState([]);
     const [goalInput, setGoalInput] = useState("");
     function goalInputHandler(enteredText){
@@ -81,47 +81,4 @@ const styles = StyleSheet.create({
         padding: 2,
         backgroundColor: "#89CFF0",
     },
-    // imageContainer:{
-    //     flex: 2,
-    //     backgroundColor: "#89CFF0",
-    //     justifyContent: "center",
-    //     alignItems: "center",
-    // },
-    // containerForm:{
-    //     flex: 1,
-    //     backgroundColor: "#fff",
-    //     alignItems: "center",
-    //     borderTopLeftRadius: 25,
-    //     borderTopRightRadius: 25,
-    //     borderBottomRightRadius: 25,
-    //     borderBottomLeftRadius: 25,
-    //     paddingStart: "5%",
-    //     paddingEnd: "5%",
-    //     marginBottom: 10,
-    // },
-    // title:{
-    //     fontSize:24,
-    //     fontWeight:"bold",
-    //     // marginTop: 40,
-    //     marginBottom: 12,
-    // },
-    // text:{
-    //     color: "#a1a1a1",
-    // },
-    // loginButton:{
-    //     backgroundColor: "#89CFF0",
-    //     borderRadius:50,
-    //     paddingVertical: 12,
-    //     width: "60%",
-    //     alignItems: "center",
-    //     justifyContent: "center",
-    //     position: "absolute",
-    //     bottom: "15%",
-    //     alignSelf: "center",
-    // },
-    // buttonText:{
-    //     fontSize: 18,
-    //     color: "#fff",
-    //     fontWeight: "bold",
-    // },
 });
